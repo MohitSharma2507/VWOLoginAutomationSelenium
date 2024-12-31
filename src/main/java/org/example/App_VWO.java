@@ -29,7 +29,7 @@ public class App_VWO {
         driver = new ChromeDriver(options);
     }
 
-    @Test(priority = 1)
+    @Test(priority = 1,groups = {"negative","sanity"})
     @Description("TC#1 - Verify the Login page by Invalid Email and Valid Password")
     public void testInvalidLogin() {
 
@@ -52,7 +52,7 @@ public class App_VWO {
         Assert.assertEquals(error, "Your email, password, IP address or location did not match");
     }
 
-    @Test(priority = 2)
+    @Test(priority = 2,groups = {"stage" , "positive", "sanity"})
     @Description("TC#2 - Verify the Login page by Valid Email and Valid Password")
     public void testValidLogin(){
         driver.get("https://app.vwo.com");

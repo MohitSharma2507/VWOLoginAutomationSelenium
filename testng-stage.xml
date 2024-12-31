@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" name="Selenium_Practice">
+        <classes>
+            <class name="org.example.App_VWO">
+            </class>
+        </classes>
+        <groups>
+            <run>
+                <include name="stage"></include>
+            </run>
+        </groups>
+    </test>
+</suite>
