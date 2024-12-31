@@ -1,4 +1,0 @@
-- java
-- Selenium
-- Allure
-- Jenkins
